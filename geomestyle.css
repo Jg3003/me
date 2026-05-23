@@ -131,9 +131,9 @@ body {
     transform:translateX(0);
     pointer-events:auto;
 }
-h2, h3{
+.mini{
     font-family: montserrat;
-    font-size: 4vh;
+    font-size: clamp(0.9rem, 2.5vw, 2rem);
     padding-left: 10vw;
     color: white;
 }
@@ -314,8 +314,62 @@ h3 {
     .yaper h4, .yoper h4 {
         letter-spacing: 0.2rem;
     }
+    .mini {
+        font-size: 1rem;
+    }
 }
-
+@media (max-width: 600px) {
+    .navy { padding: 5vh 0; }
+    .megan { width: 100vw; padding: 15vh 12vw; }
+    .dropdown { padding: 3vh 3vw; top: 5vh; }
+    .droppy { font-size: 2.5vh; }
+    h2, h3 {
+        padding-left: 6vw;
+        font-size: clamp(0.85rem, 4vw, 1.2rem);
+    }
+    h2 { padding-top: 12vh; }
+    h3 { padding-top: 0; }
+    .right {
+        float: none;
+        display: block;
+        padding-left: 6vw;
+        padding-right: 0;
+        margin-top: 0.5vh;
+        font-size: clamp(0.75rem, 3.5vw, 1rem);
+    }
+    .scene { min-height: 70vh; }
+    .cube {
+        left: 5vw;
+        width: 90vw;
+        top: 10vh;
+        height: 30vh;
+    }
+    .title {
+        font-size: clamp(1.8rem, 14vw, 5rem);
+        top: 8vh;
+        left: 8vw;
+    }
+    .black { top: -2vh; left: 2vw; }
+    .uno  { margin-top: 20vh; margin-left: 35%; }
+    .twos { margin-left: 20%; }
+    .tres { margin-left: 15%; }
+    .quat { margin-left: 16%; }
+    .yaper { margin-top: 65vh; margin-left: 6vw; margin-right: 6vw; }
+    .yoper { margin: 8vh 6vw; }
+    .yaper h4, .yoper h4 {
+        font-size: clamp(1rem, 5vw, 1.6rem);
+        letter-spacing: clamp(0.2rem, 3vw, 1rem);
+        padding-bottom: 3vh;
+    }
+    .yoper h4 { padding-left: 0; }
+    .cont { grid-template-columns: 1fr; gap: 6vw; }
+    .cont h5 { font-size: clamp(0.9rem, 5vw, 1.4rem); }
+    .cont p { font-size: clamp(0.65rem, 3vw, 0.9rem); }
+    .cont a { font-size: clamp(0.75rem, 3.5vw, 1rem); }
+    .innit { padding: 3% 5%; }
+    .kirkle { width: clamp(60px, 20vw, 100px); height: clamp(60px, 20vw, 100px); }
+    .feet { height: clamp(60px, 20vw, 100px); margin-top: 6vh; }
+}
 /*---------tabby---------*/
 @media (max-width: 900px) {
     .menu-col a  {
